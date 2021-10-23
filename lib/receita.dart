@@ -89,6 +89,17 @@ class Receita {
         ],
         "Colocar no liquidificador, o leite condensado, o coco ralado e o leite. Em seguida bater tudo por cerca de 3 minutos. Com a ajuda de um funil despejar o líquido no saquinho. Dar um nó na ponta e levar ao congelador."),
     Receita(
+        "Goiaba",
+        "assets/goiaba.jpg",
+        [
+          Ingrediente(1, "lt", "leite integral"),
+          Ingrediente(395, "gramas", "leite condensado"),
+          Ingrediente(500, "gramas", "goiaba"),
+          Ingrediente(1, "copo", "iogurte natural"),
+          Ingrediente(8, "colheres (sopa)", "açúcar"),
+        ],
+        "No liquidificador, bater o leite junto com a goiaba. Peneirar para retirar as sementes. Voltar o líquido ao liquidificador, adicionar os outros ingredientes e bater novamente. . Com a ajuda de um funil despejar o líquido no saquinho. Dar um nó na ponta e levar ao congelador."),
+    Receita(
         "Limão",
         "assets/limao.jpg",
         [
