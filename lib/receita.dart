@@ -69,6 +69,14 @@ class Receita {
         ],
         "Preparar o pudim conforme as instruções da caixinha (que leva 1/2 litro do leite) e reservar o restante. Esperar esfriar o pudim. Bater no liquidificador com o leite reservado e o leite condensado. Com a ajuda de um funil despejar o líquido no saquinho. Dar um nó na ponta e levar ao congelador."),
     Receita(
+        "Chocolate Branco",
+        "assets/chocolatebranco.jpg",
+        [
+          Ingrediente(240, "gramas", "chocolate branco (Laka)"),
+          Ingrediente(200, "gramas", "creme de leite"),
+        ],
+        "Picar o chocolate, colocar metade da quantidade em um recipiente de vidro. Levar ao micro-ondas para derreter por 45 segundos. Em seguida acrescentar o creme de leite e misturar bem. Juntar a outra metade do chocolate não derretido e misturar novamente. Despejar o líquido no saquinho. Dar um nó na ponta e levar ao congelador."),
+    Receita(
         "Chocolate com Menta",
         "assets/chocolatementa.png",
         [
