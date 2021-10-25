@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:geladinho/receita.dart';
 import 'package:geladinho/detalhe.dart';
+import 'package:geladinho/receita.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -27,9 +27,12 @@ class _MyHomePageState extends State<MyHomePage> {
               onTap: () {
                 Navigator.push(
                   ctx,
-                  MaterialPageRoute(builder: (ctx) {
-                    return Detalhe(receita: Receita.receitas[index]);
-                  }),
+                  // ignore: always_specify_types
+                  MaterialPageRoute(
+                    builder: (BuildContext ctx) {
+                      return Detalhe(receita: Receita.receitas[index]);
+                    },
+                  ),
                 );
               },
               child: buildReceitaCard(Receita.receitas[index]),
@@ -60,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 14.0,
             ),
             Text(
-              "Geladinho Gourmet de ${receita.nome}",
+              'Geladinho Gourmet de ${receita.nome}',
               style: const TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.w700,

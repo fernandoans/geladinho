@@ -3,11 +3,11 @@ import 'package:geladinho/receita.dart';
 import 'package:geladinho/receitacard.dart';
 
 class Detalhe extends StatelessWidget {
-  final Receita receita;
+  Detalhe({Key? key, required this.receita}) : super(key: key);
 
-  const Detalhe({Key? key, required this.receita}) : super(key: key);
+  Receita receita;
 
-  final String titulo = "Geladinho Gourmet de ...";
+  String titulo = 'Geladinho Gourmet de ...';
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class Detalhe extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
+          children: <Widget>[
             ReceitaCard(titulo: receita.nome, urlImagem: receita.imagemUrl),
             const SizedBox(
               height: 10,
@@ -28,11 +28,11 @@ class Detalhe extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            construirTitulo("Ingredientes"),
+            construirTitulo('Ingredientes'),
             Container(
               padding: const EdgeInsets.only(left: 16),
               child: Stack(
-                children: [
+                children: <Widget>[
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -44,7 +44,7 @@ class Detalhe extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            construirTitulo("Modo de Fazer"),
+            construirTitulo('Modo de Fazer'),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(receita.modoFazer),
@@ -56,13 +56,15 @@ class Detalhe extends StatelessWidget {
   }
 
   List<Widget> get percorrerIngredientes {
-    List<Widget> lst = [];
-    for (var ing in receita.ingredientes) {
-      lst.add(construirIngredientes(
-        ing.quantidade,
-        ing.medida,
-        ing.nome,
-      ));
+    final List<Widget> lst = <Widget>[];
+    for (final Ingrediente ing in receita.ingredientes) {
+      lst.add(
+        construirIngredientes(
+          ing.quantidade,
+          ing.medida,
+          ing.nome,
+        ),
+      );
     }
     return lst;
   }
@@ -83,9 +85,9 @@ class Detalhe extends StatelessWidget {
 
   Widget construirIngredientes(int qtd, String medida, String nome) {
     return Row(
-      children: [
+      children: <Widget>[
         Text(
-          "$qtd $medida $nome",
+          '$qtd $medida $nome',
           style: const TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,

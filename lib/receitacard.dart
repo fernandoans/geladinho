@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 class ReceitaCard extends StatelessWidget {
-  final String titulo;
-  final String urlImagem;
   const ReceitaCard({Key? key, required this.titulo, required this.urlImagem})
       : super(key: key);
+
+  final String titulo;
+  final String urlImagem;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -14,7 +16,7 @@ class ReceitaCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.black,
         borderRadius: BorderRadius.circular(15),
-        boxShadow: [
+        boxShadow: <BoxShadow>[
           BoxShadow(
             color: Colors.black.withOpacity(0.2),
             offset: const Offset(
@@ -35,7 +37,7 @@ class ReceitaCard extends StatelessWidget {
         ),
       ),
       child: Stack(
-        children: [
+        children: <Widget>[
           Align(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 5.0),
@@ -51,7 +53,6 @@ class ReceitaCard extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
-            alignment: Alignment.center,
           ),
         ],
       ),
