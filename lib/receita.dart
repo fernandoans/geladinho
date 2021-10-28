@@ -20,7 +20,7 @@ class Receita {
     ),
     Receita(
       'Abacaxi',
-      'assets/abacaxi.jpeg',
+      'assets/abacaxi.jpg',
       <Ingrediente>[
         Ingrediente(1, 'litro', 'leite integral'),
         Ingrediente(395, 'gramas', 'leite condensado'),
@@ -32,7 +32,7 @@ class Receita {
     ),
     Receita(
       'Batida',
-      'assets/batida.jpeg',
+      'assets/batida.jpg',
       <Ingrediente>[
         Ingrediente(1, 'litro', 'leite integral'),
         Ingrediente(395, 'gramas', 'leite condensado'),
@@ -85,7 +85,7 @@ class Receita {
     ),
     Receita(
       'Chocolate com Menta',
-      'assets/chocolatementa.png',
+      'assets/chocolatementa.jpg',
       <Ingrediente>[
         Ingrediente(1, 'litro', 'leite integral'),
         Ingrediente(395, 'gramas', 'leite condensado'),
@@ -96,8 +96,22 @@ class Receita {
       'Colocar no liquidificador o leite, o leite condensado e o creme de leite. Bater os ingredientes. Quando ficar bem misturado, acrescentar a essência de menta. Colocar aos poucos para ir colorindo o líquido e vá provando para testar o sabor. Descansar por 5 a 10 minutos, até a espuma que fica por cima se desfazer. Se ficar excesso, tire com uma colher para evitar bolhas de ar no geladinho. Corte o chocolate em barra em cubinhos bem pequenos e levar, em um recipiente de vidro, ao micro-ondas por 10 segundos. Tire e mexa. Esquentar novamente, sempre por 10 segundos, quantas vezes for necessário para chocolate derreter por completo e ficar bem denso. Depois disso, colocar a mistura em um recipiente de coberturas para facilitar na hora de colocar no saquinho. Dá para fazer cobertura completa ou listras de chocolate. Para as listras, coloque um pouco de chocolate no fundo do saquinho, puxar para o começo e ir fazendo barrinhas com uma espátula. Com a ajuda do funil, coloque a mistura de menta. Assim que misturar o chocolate com a menta, colocar imediatamente no congelador, porque assim o chocolate endurece da maneira correta.',
     ),
     Receita(
+      'Chokito',
+      'assets/chokito.jpg',
+      <Ingrediente>[
+        Ingrediente(1, 'litro', 'leite integral'),
+        Ingrediente(395, 'gramas', 'leite condensado'),
+        Ingrediente(200, 'gramas', 'creme de leite'),
+        Ingrediente(1, 'colher (sopa)', 'liga neutra'),
+        Ingrediente(2, 'colher (sopa)', 'chocolate em pó 50% cacau'),
+        Ingrediente(2, 'colher (sopa)', 'pó para sorvete sabor doce de leite'),
+        Ingrediente(200, 'ml', 'flocos de arroz'),
+      ],
+      'Colocar no liquidificador todos os ingredientes menos o floco de arroz. Bater até que a mistura fique homogênea. Adicionar os flocos de arroz e misturar manualmente. Com a ajuda de um funil despejar o líquido no saquinho. Dar um nó na ponta e levar ao congelador.',
+    ),
+    Receita(
       'Coco',
-      'assets/coco.jpeg',
+      'assets/coco.jpg',
       <Ingrediente>[
         Ingrediente(400, 'ml', 'leite integral'),
         Ingrediente(395, 'gramas', 'leite condensado'),
