@@ -2,19 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:geladinho/receita.dart';
 import 'package:geladinho/receitacard.dart';
 
+@immutable
 class Detalhe extends StatelessWidget {
-  Detalhe({Key? key, required this.receita}) : super(key: key);
+  const Detalhe({Key? key, required this.receita}) : super(key: key);
 
-  Receita receita;
-
-  String titulo = 'Geladinho Gourmet de ...';
+  final Receita receita;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
-        title: Text(titulo),
+        title: const Text('Geladinho Gourmet de ...'),
       ),
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
